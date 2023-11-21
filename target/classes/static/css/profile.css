@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Linefont:wght@100;200;300;400&display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: #191B1F;
+}
+body {
+    margin-top: 20px;
+    height: 100% auto;
+    background-color: #191B1F;
+}
+.container {
+   
+    width: 100%;
+}
+.ui-w-80 {
+    width : 80px !important;
+    height: auto;
+    background-color: #191B1F;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background  : transparent;
+    color       : #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: white ;
+}
+.text{
+    color: gray;
+    font-size: 0.90rem;
+    margin-top: 0.5rem;
+}
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+    z-index: 0;
+    background-color: #191B1F;
+}
+.row-bordered {
+    overflow: hidden;
+    background-color: #191B1F;
+}
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+    background-color: #191B1F;
+}
+.mb-4{
+    color: rgb(0, 0, 0);
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold ;
+    background-color: #191B1F;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent ;
+    background-color: #191B1F;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% ;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) ;
+    background-color: #191B1F;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: white ;
+    
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) ;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: white;
+    
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) ;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff ;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 ;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) ;
+}
+.form-group{
+    color: white;
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 1rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .theme-switch input {
+    display: none;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(0, 0, 0);
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #555;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Dark mode styles */
+  input:checked ~ body {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.4s ease;
+  }
+.text-right{
+    margin: 1rem;
+}
+
+.contact{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.contact:hover{
+    text-decoration: none;
+    color: rgb(5, 105, 255)(30, 96, 96);
+}
+.btn-logout{
+    padding: 10px 20px;
+        background-color: rgb(70, 70, 70); /* Dark background */
+        color: #fff; /* White text */
+        border: none;
+        border-radius: 3px; /* Slightly rounded corners */
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s;
+        margin-top: 1rem;
+}
+.btn-logout:hover{
+    background-color: #ff0000;
+}
+.btn-logout:focus {
+    outline: none; /* Removes the outline on focus */
+}
+.logo:hover {
+    text-decoration: none;
+}
+.font-weight-bold{
+    margin-top: 1rem;
+    color: black;
+}

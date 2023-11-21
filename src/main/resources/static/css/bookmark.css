@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Linefont:wght@100&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif ;
+    
+    color: rgb(0, 0, 0);
+    width: 100% auto ;
+}
+html{
+    background: #191B1F;
+}
+.title {
+    padding: 0;
+   margin: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 2.15rem;
+    font-weight: bolder;
+    background: #191B1F
+}
+.back{
+    display: flex;
+    width: 100%;
+    justify-content:left;
+}
+
+.back-icon a{
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: auto;
+    display: flex;
+   
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    
+    margin: 0.5rem;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+.back-icon a{
+    margin-top: 1.5rem;
+}
+.searchBox{
+    position: relative;
+    background: #191B1F;
+    display: flex;
+    
+    justify-content: center;
+    width: 40px;
+    height: 2.75rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+
+.editbox {
+    position: relative;
+    background: #191B1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 40px;
+    height: 2.75rem;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+.bicon:hover,
+.icon:hover{
+    background-color: gray;
+    border-radius: 100px;
+    opacity: 0.3s;
+}
+.edit a{
+    position: relative;
+    min-width: 38px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+.con{
+    display: flex;
+    align-items: end;
+    justify-content:end;
+
+}
+.search a{
+    position: relative;
+    width: 38px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.85rem;
+    cursor: pointer;
+    background: #191B1F;
+}
+
+
+
+
+
+
+
+.gird{
+    display: grid;
+    justify-content: center;
+}
+
+.fv-con{
+    background-color: gray;
+    width: 400px ;
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 10px;  
+    transition: 0.5s;
+}
+.fv-card{
+    display: flex;
+    justify-content:space-between ;
+}
+.detail-head{
+    align-items: flex-end;
+    font-size: 15px;
+}
+
+.detail-head h1{
+    font-size: 1.55rem;
+    
+}
+.detail-head p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    
+}
+.temp {
+    display: flex;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+    
+}
+.fv-card-tail{
+    display: flex;
+    justify-content:space-between ;
+}
+.detail-tail{
+    align-items: flex-end;
+    font-size: 10px;
+}
+.detail-tail h1{
+    margin-top:1rem ;
+    font-weight: lighter;
+}
+.detail-tail h2{
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+.temp-hl{
+    display: flex;
+    justify-content:space-around;
+    font-size: 17px;
+    margin-top: 3.5rem;
+}
+
+@media only screen and (min-width: 1200px){
+    .html{
+        background-color: #191B1F;
+    }
+    .gird{
+        display: grid;
+        width: auto;
+        background: #191B1F;
+    }
+    .fv-con{
+        background: linear-gradient(to bottom left, #99BCC4 0%,#121C84 50%,#8278DA 100%);
+    }
+    
+}
+@media only screen and (min-width: 992px){
+    .html{
+        background-color: #191B1F;
+    }
+    .gird{
+        display: grid;
+        width: auto;
+        background: #191B1F;
+    }
+    .fv-con{
+        background: linear-gradient(to bottom left, #99BCC4 0%,#121C84 50%,#8278DA 100%);
+    }
+    
+}
+@media only screen and (min-width: 768px){
+    .html{
+        background-color: #191B1F;
+    }
+    .gird{
+        display: grid;
+        width: auto;
+        background: #191B1F;
+    }
+    .fv-con{
+        background: linear-gradient(to bottom left,  #99BCC4 0%,#121C84 50%,#8278DA 100%);
+    }
+    
+}
+@media only screen and (min-width: 600px){
+    .html{
+        background-color: #191B1F;
+    }
+    .gird{
+        display: grid;
+        width: auto;
+        background: #191B1F;
+    }
+    .fv-con{
+        background: linear-gradient(to bottom left,  #99BCC4 0%,#121C84 50%,#8278DA 100%);
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .html{
+        background-color: #191B1F;
+        
+    }
+    .gird{
+        display: grid;
+        width: auto;
+        background: #191B1F;
+        
+        
+    }
+    .fv-con{
+        background: linear-gradient(to bottom left, #99BCC4 0%,#121C84 50%,#8278DA 100%);
+        
+    }
+}

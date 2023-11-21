@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/bookmark.css}">
+    <title>bookmark</title>
+    <script>
+    function updateWeatherOnBookmark(weatherData) {
+    $('#city').text(weatherData.location.city);
+    $('.temperature').text(weatherData.current.temp);
+    }
+
+    </script>
+</head>
+<body>
+<div class="gird">
+
+    <div class="con">
+        <div class="back">
+            <div class="back-icon">
+               <a href="#" class="bicon"><ion-icon name="chevron-back-outline" ></ion-icon></a> 
+            </div>
+             <h2 class="title">Weather</h2>  
+        </div>
+
+        <div class="searchBox">
+            <div class="search">
+                <a href="#" class="icon"><ion-icon name="search-outline" ></ion-icon></a>
+            </div>
+            
+        </div>
+        <div class="editbox">
+            
+            <div class="edit"><a href="#" class="icon"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a></div>
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+   
+    
+    <div class="fv-con">
+        <div class="fv-card">
+            <div class = "detail-head">
+                <h1 class="my">My Location</h1>
+                <p id="city" th:text="${location != null ? location.city : 'Default City'}">Default City</p>
+            </div>
+            <div class="temp" ><span class="temperature" th:text="${weather.current.temp}">0</span><span class="degree-celsius">°C</span></div>
+        </div>
+        <div class="fv-card-tail">
+            <div class = "detail-tail">
+            </div>
+            <div class="temp-hl">H:28&#176 L:20&#176</div>
+            
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
